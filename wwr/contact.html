@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Dry Oar Rafting Co. for inquiries, reservations, and questions. Find our address, phone, email, and a contact form." />
+  <meta name="Uwase jolie" content="Jolie" />
+  <title>Contact Us - Dry Oar Rafting Co.</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/dryoarlogo.png" alt="Dry Oar Rafting Co. Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="contact-main">
+    <h1>Contact Us</h1>
+
+    <section class="contact-info">
+      <div class="info-card">
+        <h2>Company Information</h2>
+        <p><strong>Address:</strong> 123 Riverbend Lane, Whitewater, UT 84000</p>
+        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+        <p><strong>Email:</strong> info@dryoar.com</p>
+      </div>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1554228.6180327293!2d-111.96875!3d40.485125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE4JzI2LjAiTiAxMTDCsDE3JzAyLjUiVw!5e0!3m2!1sen!2sus!4v1625244583162!5m2!1sen!2sus"
+          allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <section class="employee-profiles">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
+        <figure>
+          <img src="images/jol.jpg" alt="Ariel Employee Ariel Doe" />
+          <figcaption>Jolie<br>CEO</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpeg" alt="Jolie Employee Jolie Smith" />
+          <figcaption>Smith<br>Head Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Fab.jpg" alt="Happy Employee Happy Jones" />
+          <figcaption>Fabrice<br>Reservations</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="/submit-form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="user_email" required />
+
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <input type="radio" id="general" name="message_purpose" value="general" required />
+          <label for="general">General Inquiry</label>
+          <br />
+          <input type="radio" id="reservation" name="message_purpose" value="reservation" />
+          <label for="reservation">Reservation Question</label>
+          <br />
+          <input type="radio" id="suggestion" name="message_purpose" value="suggestion" />
+          <label for="suggestion">Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="user_message" rows="4" required></textarea>
+
+        <div class="subscribe-checkbox">
+          <input type="checkbox" id="subscribe" name="newsletter_subscribe" />
+          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Dry Oar Rafting Co. | Uwase Jolie</p>
+    <div class="social-links">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+    </div>
+    <a href="images/wireframe (1).png">Contact Us Wireframe</a>
+  </footer>
+</body>
+</html>
